@@ -1,0 +1,35 @@
+.central-card {
+  position: relative;
+  left: 18px;
+  max-width: 650px;
+}
+.icon {
+  font-size: 60px;
+  position: relative;
+  left: 40px;
+  top: 30px;
+}
+.temperature {
+  font-size: 50px;
+  position: relative;
+  left: 10px;
+  top: 40px;
+}
+.units {
+  font-size: 14px;
+  position: relative;
+  top: -77px;
+  left: 27px;
+}
+.current-weather {
+  position: relative;
+  left: 50px;
+  top: 25px;
+  list-style: none;
+}
+.description,
+.humidity,
+.wind,
+.clouds {
+  font-weight: bold;
+}

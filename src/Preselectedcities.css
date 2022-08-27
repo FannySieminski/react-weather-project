@@ -1,0 +1,19 @@
+.preselect {
+  color: #86c8fa;
+}
+.preselect :hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.current-location {
+  background-color: #86c8fa;
+  border: #86c8fa;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: 10px;
+}

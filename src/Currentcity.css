@@ -1,0 +1,8 @@
+.currenttime {
+  margin-top: -15px;
+}
+
+.currentcity {
+  font-weight: bold;
+  text-transform: capitalize;
+}

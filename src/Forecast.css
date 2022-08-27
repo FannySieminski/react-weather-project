@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+}
+
+.next-days {
+  position: relative;
+  left: 66px;
+}
+.icon-next-days {
+  position: relative;
+  right: 25px;
+  max-width: 80px;
+}
+.temperature-next-days {
+  position: relative;
+  right: 30px;
+}

@@ -1,13 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Preselectedcities from "./Preselectedcities";
+import Search from "./Search";
+import Currentcity from "./Currentcity";
+import Currentforecast from "./Currentforecast";
+import Forecast from "./Forecast";
+import Footer from "./Footer";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    function App(){" "}
+    {
+      <div className="App">
+        <div class="container">
+          <div class="card main-card">
+            <div class="card-body">
+              <Preselectedcities />
+              <br />
+              <Search />
+              <br />
+              <Currentcity />
+              <br />
+              <Currentforecast />
+              <br />
+              <Forecast />
+            </div>
+          </div>
+          <Footer />
+        </div>
+      </div>
+    }
+    return function App();
   </React.StrictMode>
 );
 
