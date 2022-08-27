@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import 'bootstrap/dist/css/bootstrap.css';
+
 import "./index.css";
 import Preselectedcities from "./Preselectedcities";
 import Search from "./Search";
@@ -12,28 +14,24 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    function App(){" "}
-    {
-      <div className="App">
-        <div class="container">
-          <div class="card main-card">
-            <div class="card-body">
-              <Preselectedcities />
-              <br />
-              <Search />
-              <br />
-              <Currentcity />
-              <br />
-              <Currentforecast />
-              <br />
-              <Forecast />
-            </div>
+    <div className="App">
+      <div class="container">
+        <div class="card main-card">
+          <div class="card-body">
+            <Preselectedcities />
+            <br />
+            <Search />
+            <br />
+            <Currentcity />
+            <br />
+            <Currentforecast />
+            <br />
+            <Forecast />
           </div>
-          <Footer />
         </div>
+        <Footer />
       </div>
-    }
-    return function App();
+    </div>
   </React.StrictMode>
 );
 

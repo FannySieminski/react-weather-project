@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <a
-        href="https://github.com/FannySieminski/fanny-super-project"
+        href="https://github.com/FannySieminski/react-weather-project"
         target="blanck"
       >
         Open source code
