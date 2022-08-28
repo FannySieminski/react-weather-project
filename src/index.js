@@ -1,11 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import 'bootstrap/dist/css/bootstrap.css';
-
+import "bootstrap/dist/css/bootstrap.css";
+import axios from "axios";
 import "./index.css";
 import Preselectedcities from "./Preselectedcities";
-import Search from "./Search";
-import Currentcity from "./Currentcity";
 import Currentforecast from "./Currentforecast";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
@@ -15,14 +13,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div className="App">
-      <div class="container">
-        <div class="card main-card">
-          <div class="card-body">
+      <div className="container">
+        <div className="card main-card">
+          <div className="card-body">
             <Preselectedcities />
-            <br />
-            <Search />
-            <br />
-            <Currentcity />
             <br />
             <Currentforecast />
             <br />
