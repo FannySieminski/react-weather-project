@@ -3,29 +3,36 @@ import "./Currentforecast.css";
 import axios from "axios";
 
 export default function Currentforecast() {
-  let [city, setCity] = useState("");
+  let [city, setCity] = useState("paris");
   let [temperature, setTemperature] = useState("");
   let [description, setDescription] = useState("");
   let [humidity, setHumidity] = useState("");
   let [wind, setWind] = useState("");
   let [icon, setIcon] = useState("");
+  let [cloud, setCloud] = useState("");
 
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c4d36cc9101ca41ceee2cff31c436ac9&units=metric`;
-  axios.get(url).then(showWeather);
+let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c4d36cc9101ca41ceee2cff31c436ac9&units=metric`;
+      axios.get(url).then(showWeather);
   function showWeather(response) {
+  
+
     setTemperature(response.data.main.temp);
     setDescription(response.data.weather[0].description);
     setHumidity(response.data.main.humidity);
     setWind(response.data.wind.speed);
+    setCloud(response.data.clouds.all);
     setIcon
       (`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
       );
   } 
+
+ 
   function updateCity(event) {
     setCity(event.target.value);
+    
   }
  
-  return (
+    return (
     <div>
       <div className="enter-city">
         <form onSubmit={handleSubmit}>
@@ -72,7 +79,7 @@ export default function Currentforecast() {
                 Wind: <span className="wind"> </span> <strong>{Math.round(wind)} km/h</strong>
               </li>
               <li>
-                Clouds: <span className="clouds"> </span> <strong> %</strong>
+                Clouds: <span className="clouds"> </span> <strong>{cloud} %</strong>
               </li>
             </ul>
           </div>
@@ -80,9 +87,12 @@ export default function Currentforecast() {
       </div>
     </div>
   );
-}
-
- function handleSubmit(event) {
+ 
+    
+  function handleSubmit(event) {
     event.preventDefault();
     
     }
+  
+ 
+}
